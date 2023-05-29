@@ -25,7 +25,6 @@ public class ReceptaiPlanningUtil {
             return true;
         }
         for (int i = 0; i < receptai.size(); i++) {
-            List<Receptas> tempResult = new ArrayList<>(result);
             result.add(receptai.get(i));
             if (isValidForAllRibojimai(ribojimai, result)) {
                 receptai.remove(i);
